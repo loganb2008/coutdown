@@ -1,0 +1,95 @@
+<span id="att"></span><br>
+<span id="tmo"></span><br>
+<span id="spr"></span><br>
+<span id="vzw"></span>
+<script>
+// at&t, cricket
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 1, 2022 00:00").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("att").innerHTML = "AT&T & Cricket Will shut 3G down in: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("att").innerHTML = "AT&T 3G has been shutdown";
+  }
+}, 1000);
+// t-mobile
+var countDownDate1 = new Date("Jul 1, 2022 00:00").getTime();
+// Update the count down every 1 second
+var x1= setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate1 - now;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("tmo").innerHTML = "T-Mobile will shut 3G Down in: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x1);
+    document.getElementById("tmo").innerHTML = "T-Mobile 3G has been shutdown";
+  }
+}, 1000);
+// sprint
+var countDownDate2 = new Date("Mar 31, 2022 00:00").getTime();
+// Update the count down every 1 second
+var x2= setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate2 - now;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("spr").innerHTML = "Sprint will shut 3G Down in: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x2);
+    document.getElementById("spr").innerHTML = "Sprint 3G has been shutdown";
+  }
+}, 1000);
+// Verizon
+var countDownDate3 = new Date("Dec 31, 2022 00:00").getTime();
+// Update the count down every 1 second
+var x3= setInterval(function() {
+  // Get today's date and time
+  var now = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance = countDownDate3 - now;
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("vzw").innerHTML = "Verizon will shut 3G Down in: " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x3);
+    document.getElementById("vzw").innerHTML = "Verizon 3G has been shutdown";
+  }
+}, 1000);
+</script>
